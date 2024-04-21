@@ -112,5 +112,5 @@ if (process.env.NODE_ENV !== 'test') {
 }
 
 // At the end of your server.js
-module.exports = { app, fetchSpaceXLaunches}; // Export the app for testing
+module.exports = { app, fetchSpaceXLaunches, fetchCrewDetails}; // Export the app for testing
 

@@ -16,4 +16,11 @@ describe('GET /', () => {
     expect(response.statusCode).toBe(200);
     expect(response.text).toContain('Falcon 9');
   });
+
+  it('responds with 404 for non-existing routes', async () => {
+    const response = await request(app).get('/non-existent-route');
+    expect(response.statusCode).toBe(404);
+  });
+
 });
+
